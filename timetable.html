@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
+<style>
+    td { background-color: yellow}
+    #ol{
+        color: whitesmoke;
+        background-color: black;
+    }
+    .c1 { border: 2px solid red; background-color: aqua;}
+</style>
+
+
 <body>
     
     <h1>시간표</h1>
@@ -24,9 +38,9 @@
             <tr>
                 <td>1교시</td>
                 <td rowspan="2"></td>
-                <td rowspan="3">웹 프로그래밍</td>
+                <td class="c1" rowspan="3">웹 프로그래밍</td>
                 <td rowspan="2">역사와 문화</td>
-                <td rowspan="3">데이터베이스 설계</td>
+                <td id="ol" rowspan="3">데이터베이스 설계</td>
                 <td rowspan="9">&nbsp;</td>
             </tr>
             
@@ -42,7 +56,7 @@
 
 
         </tbody>
-        <tfoot>
+        <tfoot border="3">
             <tr>
                 <td>4교시</td>
                 <td></td>
@@ -54,7 +68,7 @@
             <tr>
                 <td>5교시</td>
                 <td rowspan="3">인공지능확률론</td>
-                <td rowspan="3">객체지향 프로그래밍</td>
+                <td id="ol" rowspan="3">객체지향 프로그래밍</td>
             </tr>
             <tr>
                 <td>6교시</td>
@@ -71,10 +85,11 @@
             </tr>
             <tr>
                 <td>9교시</td>
-                <td>인생설계와 진로 II</td>
+                <td class="c1">인생설계와 진로 II</td>
             </tr>
 
         </tfoot>
     </table>
+    <a href="https://www.syu.ac.kr">삼육대학교</a>
 </body>
 </html>
